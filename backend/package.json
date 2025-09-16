@@ -1,0 +1,71 @@
+{
+  "name": "hongcao-backend",
+  "version": "1.0.0",
+  "description": "Hongcao 网站管理系统 - 后端服务",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:seed": "tsx src/scripts/seed.ts",
+    "db:reset": "prisma migrate reset --force"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.4.0",
+    "@fastify/helmet": "^11.1.0",
+    "@fastify/jwt": "^7.2.0",
+    "@fastify/multipart": "^8.0.0",
+    "@fastify/rate-limit": "^8.0.0",
+    "@fastify/swagger": "^8.12.0",
+    "@fastify/swagger-ui": "^2.0.0",
+    "@prisma/client": "^5.6.0",
+    "bcrypt": "^5.1.0",
+    "bull": "^4.11.0",
+    "dayjs": "^1.11.0",
+    "fastify": "^4.24.0",
+    "ioredis": "^5.3.0",
+    "joi": "^17.11.0",
+    "lodash": "^4.17.21",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.9.0",
+    "pino": "^8.16.0",
+    "pino-pretty": "^10.2.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^21.5.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/bull": "^4.10.0",
+    "@types/lodash": "^4.14.0",
+    "@types/node": "^20.8.0",
+    "@types/node-cron": "^3.0.0",
+    "@types/nodemailer": "^6.4.0",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "eslint": "^8.51.0",
+    "prisma": "^5.6.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.0",
+    "vitest": "^0.34.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "website-management",
+    "seo",
+    "keyword-analysis",
+    "ssl-monitoring",
+    "fastify",
+    "typescript"
+  ],
+  "author": "Hongcao Team",
+  "license": "MIT"
+}

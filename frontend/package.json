@@ -1,0 +1,47 @@
+{
+  "name": "hongcao-frontend",
+  "version": "1.0.0",
+  "description": "Hongcao 网站管理系统 - 前端应用",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --ext ts,tsx --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
+    "antd": "^5.12.0",
+    "@ant-design/icons": "^5.2.0",
+    "echarts": "^5.4.0",
+    "echarts-for-react": "^3.0.2",
+    "axios": "^1.6.0",
+    "zustand": "^4.4.0",
+    "@tanstack/react-query": "^5.0.0",
+    "dayjs": "^1.11.0",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/lodash-es": "^4.17.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
